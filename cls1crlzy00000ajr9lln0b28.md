@@ -133,7 +133,7 @@ In this example,
 
 ## Naming and Renaming Containers 🔤
 
-### **Naming a Docker Container** 🏷️\*\*:\*\*
+### **Naming a Docker Container** 🏷️:
 
 1. **During Container Creation:**
     
@@ -255,7 +255,7 @@ docker run --name my_web_app --restart always -d -p 4444:80 nginx
 * This creates a container named "*my\_web\_app*" with an always restart policy.
     
 
-### **Starting a Container** ▶️\*\*:\*\*
+### **Starting a Container** ▶️:
 
 **1\. Using**`docker start`**Command:**
 
@@ -552,7 +552,7 @@ This command starts the container named "*my\_container*."
 * When you run `docker run`, it creates a new container and then starts it.
     
 
-### **Benefits of Creating Without Running** 🎖️\*\*:\*\*
+### **Benefits of Creating Without Running** 🎖️:
 
 * **Configuration Inspection:**
     
@@ -639,7 +639,7 @@ docker system prune
 
 We can also use the `docker container prune` for a safer way!
 
-### **Why Removing Dangling Containers is Necessary** 🤔\*\*:\*\*
+### **Why Removing Dangling Containers is Necessary** 🤔:
 
 * **Disk Space Optimization:**
     
@@ -702,9 +702,9 @@ Running containers in interactive mode is a way to directly interact with a cont
     * This command starts a Python container in interactive mode with a terminal.
         
 
-Certainly! Executing commands inside a container is a fundamental aspect of working with Docker. It allows you to run specific commands or interact with the container's environment. Here's a simple explanation:
+Executing commands inside a container is a fundamental aspect of working with Docker. It allows you to run specific commands or interact with the container's environment. Here's a simple explanation:
 
-### **Executing Commands Inside a Container** 🛠️\*\*:\*\*
+### **Executing Commands Inside a Container** 🛠️:
 
 1. **Using**`docker exec`**Command:**
     
@@ -737,7 +737,7 @@ Certainly! Executing commands inside a container is a fundamental aspect of work
     * `ls /app`: The command to be executed inside the container.
         
 
-### **Why execute commands inside a container** 🤔\*\*?\*\*
+### **Why execute commands inside a container** 🤔?
 
 * **Application Management:**
     
@@ -752,9 +752,9 @@ Certainly! Executing commands inside a container is a fundamental aspect of work
     * Execute commands to configure or customize settings within the container.
         
 
-### **Practical Example** 🔧\*\*:\*\*
+### **Practical Example** 🔧:
 
-1. **Start a container** 🚀\*\*:\*\*
+1. **Start a container** 🚀:
     
     * Start a container named "*my\_web\_app*."
         
@@ -763,16 +763,16 @@ Certainly! Executing commands inside a container is a fundamental aspect of work
     docker run -d --name my_web_app nginx
     ```
     
-2. **Execute a command inside the container** ⚙️\*\*:\*\*
+2. **Execute a command inside the container** ⚙️:
     
     * Execute a command (e.g., list files in the Nginx default directory).
         
     
     ```bash
-    bashCopy codedocker exec my_web_app ls /usr/share/nginx/html
+    docker exec my_web_app ls /usr/share/nginx/html
     ```
     
-3. **See the result** 📈\*\*:\*\*
+3. **See the result** 📈:
     
     * View the output of the executed command.
         
@@ -783,9 +783,9 @@ Certainly! Executing commands inside a container is a fundamental aspect of work
     ```
     
 
-### **Quick Tips** 💡\*\*:\*\*
+### **Quick Tips** 💡:
 
-* **Multiple Commands** 🧬\*\*:\*\*
+* **Multiple Commands** 🧬:
     
     * You can execute multiple commands by separating them with semicolons or using shell syntax.
         
